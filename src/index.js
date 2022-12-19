@@ -60,7 +60,7 @@ async function onLoadMoreButtonClick() {
 }
 
 async function getPhotos (searchString) {
-    const response = await axios.get('https://pixabay.com/api', {
+    const response = await axios.get('https://pixabay.com/api/', {
         params: {
             key: '32074254-ec575441b41af33a027107547',
             q: `${searchString}`,
